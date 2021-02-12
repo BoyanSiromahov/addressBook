@@ -22,8 +22,8 @@ public class Application {
         return (args) -> {
             AddressBook ab = new AddressBook();
             ab.setName("ab1");
-            BuddyInfo b1 = new BuddyInfo("Jack", "416-525-4070",ab);
-            BuddyInfo b2 = new BuddyInfo("Chloe", "416-234-1234", ab);
+            BuddyInfo b1 = new BuddyInfo("Jack", "416-525-4070",ab, "lakeshore rd.");
+            BuddyInfo b2 = new BuddyInfo("Chloe", "416-234-1234", ab, "eastway rd.");
             ab.addBuddy(b1);
             ab.addBuddy(b2);
             abRepo.save(ab);

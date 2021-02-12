@@ -25,4 +25,10 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
                 String.class)).contains("<td>Jack</td>");
     }
+
+    @Test
+    public void AddressShouldReturn() throws Exception {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
+                String.class)).contains("<td>eastway</td>");
+    }
 }

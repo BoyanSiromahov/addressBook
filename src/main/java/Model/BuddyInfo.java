@@ -7,6 +7,7 @@ import java.io.Serializable;
 public class BuddyInfo implements Serializable {
     public String name;
     public String phoneNumber;
+    public String address;
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
@@ -16,10 +17,11 @@ public class BuddyInfo implements Serializable {
     public BuddyInfo() {}
 
     //creates a buddy with a name and a number
-    public BuddyInfo(String name, String number, AddressBook ab){
+    public BuddyInfo(String name, String number, AddressBook ab,String address){
         this.name = name;
         phoneNumber = number;
         AddressBook = ab;
+        this.address = address;
     }
 
     public Long getId() {
