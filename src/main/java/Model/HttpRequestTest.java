@@ -20,9 +20,9 @@ public class HttpRequestTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
-    public void greetingShouldReturnDefaultMessage() throws Exception {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
-                String.class)).contains("<td>Jack</td>");
-    }
+//    @Test
+//    public void greetingShouldReturnDefaultMessage() throws Exception {
+//        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
+//                String.class)).contains("<td>Jack</td>");
+//    }
 }
