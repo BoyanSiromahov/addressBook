@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses= AddressBookController.class)
 public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
