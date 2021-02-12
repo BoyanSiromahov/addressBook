@@ -1,6 +1,5 @@
-Model\Application.class
-Controller\AddressBookController.class
-Model\BuddyInfoRepo.class
 Model\AddressBookRepo.class
 Model\AddressBook.class
 Model\BuddyInfo.class
+Model\Application.class
+Model\BuddyInfoRepo.class
