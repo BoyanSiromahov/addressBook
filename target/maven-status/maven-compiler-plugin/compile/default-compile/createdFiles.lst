@@ -1,9 +1,0 @@
-Model\Application.class
-Model\BuddyInfoRepo.class
-Model\AddressBookRepo.class
-Model\AddressBook.class
-Model\BuddyInfo.class
-Model\HttpRequestTest.class
-Model\AddressBookController.class
-Model\SmokeTest.class
-Model\TestingWebApplicationTest.class

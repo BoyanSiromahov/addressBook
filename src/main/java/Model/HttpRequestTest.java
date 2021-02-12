@@ -29,6 +29,6 @@ public class HttpRequestTest {
     @Test
     public void AddressShouldReturn() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
-                String.class)).contains("<td>eastway</td>");
+                String.class)).contains("<td>lakeshore rd</td>");
     }
 }
