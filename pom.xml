@@ -103,7 +103,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>model.Application</mainClass>
+                            <mainClass>Model.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
