@@ -30,25 +30,35 @@ public class BuddyInfo implements Serializable {
     }
 
     //sets the name
-    public String getName(String name){
+    public void setName(String name){
 
-        return name;
+        this.name = name;
     }
 
-    //sets the number
-    public String getNumber(String number){
-
-        return number;
-    }
-
-    //returns the name
+    //sets the name
     public String getName(){
         return name;
     }
 
     //returns the number
-    public String getNumber(){
+    public String getPhoneNumber(){
         return phoneNumber;
+    }
+
+    //set the address
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    //returns the number
+    public String getAddress(){
+        return address;
+    }
+
+    //sets the number
+    public void setPhoneNumber(String phoneNumber){
+
+        this.phoneNumber = phoneNumber;
     }
 
     public AddressBook getAddressBook() {

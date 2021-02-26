@@ -1,7 +1,6 @@
 package Model;
 
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.*;
 import javax.persistence.*;
 
@@ -9,8 +8,7 @@ import javax.persistence.*;
 public class AddressBook implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    private Long id =  Long.valueOf(0);
     @OneToMany(mappedBy = "AddressBook")
     public Set<BuddyInfo> buddies;
     private String name;
@@ -23,7 +21,7 @@ public class AddressBook implements Serializable {
     private void listBuddies(){
         for(BuddyInfo x : buddies){
             System.out.print(x.getName() + "  ");
-            System.out.println(x.getNumber());
+            System.out.println(x.getPhoneNumber());
         }
     }
 
